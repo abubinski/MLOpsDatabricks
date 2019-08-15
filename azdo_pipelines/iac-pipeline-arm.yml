@@ -12,7 +12,7 @@ pool:
 variables:
   baseName: $[coalesce(variables['baseNameOverride'], 'ABmlopsdb')]
   location: $[coalesce(variables['locationOverride'], 'westus2')]
-  azuresub: $[coalesce(variables['azuresubOverride'], 'anbubin_InternalSubscription')]
+  azuresub: $[coalesce(variables['azuresubOverride'], 'AML Azure Connection')]
 
 steps:
 - task: AzureResourceGroupDeployment@2
